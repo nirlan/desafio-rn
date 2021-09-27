@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 import { View, Image, StyleSheet, Text } from 'react-native';
 
-import logo from '../../../assets/popcorn.png';
+import logo from '../../../../assets/popcorn.png';
 
 export default function Topo() {
     return <View style={estilos.topo}>
@@ -12,7 +12,7 @@ export default function Topo() {
 
 const estilos = StyleSheet.create({
     topo: {
-        flexDirection: "row",        
+        flexDirection: "row",
         backgroundColor: "#000000",
         alignItems: "center",
         height: 72,
@@ -25,7 +25,7 @@ const estilos = StyleSheet.create({
     titulo: {
         color: "#FFFFFF",
         width: "100%",
-        paddingLeft: 24,                        
+        paddingLeft: 24,
         fontSize: 24,
         lineHeight: 36,
     }

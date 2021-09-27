@@ -21,6 +21,46 @@ const filmes = {
         {
         nome: "Malévola",
         imagem: imagem,
+        },
+        {
+        nome: "Alf o ETeimoso",
+        imagem: imagem,
+        },
+        {
+        nome: "MIB",
+        imagem: imagem,
+        },
+        {
+        nome: "Caça-fantasmas",
+        imagem: imagem,
+        },
+        {
+        nome: "Cinderela",
+        imagem: imagem,
+        },
+        {
+        nome: "Férias do Barulho",
+        imagem: imagem,
+        },
+        {
+        nome: "Paul",
+        imagem: imagem,
+        },
+        {
+        nome: "MIB II",
+        imagem: imagem,
+        },
+        {
+        nome: "Presságio",
+        imagem: imagem,
+        },
+        {
+        nome: "2012",
+        imagem: imagem,
+        },
+        {
+        nome: "Impacto Profundo",
+        imagem: imagem,
         }
     ]
 }
