@@ -1,12 +1,14 @@
 ﻿import React, { useEffect, useState } from 'react';
-import { FlatList, ActivityIndicator } from 'react-native';
+import { FlatList, ActivityIndicator, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Topo from './componentes/Topo';
 import Item from './componentes/Item';
 
 import logo from '../../../assets/popcorn.png';
 
-export default function Filmes({ results }) {
+export default function Filmes() {
     const [isLoading, setLoading] = useState(true);
     const [data, setData] = useState([]);
 
@@ -33,6 +35,7 @@ export default function Filmes({ results }) {
                 data={data}                              
                 keyExtractor={({ id }, index) => id}
                 renderItem={Item}
+
                 ListHeaderComponent={() => {
                     return <>
                         <Topo />

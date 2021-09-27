@@ -1,10 +1,10 @@
 ﻿import React from 'react';
 import { View, Image, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import * as RootNavigation from '../../../../RootNavigation';
 
-import Detalhes from '../../Detalhes'
-
-export default function Item({ item }) {
-    return <TouchableOpacity onPress={handlerClick}>
+export default function Item({ item }) {    
+    
+    return <TouchableOpacity onPress={() => RootNavigation.navigate('Detalhes')}>
         <View key={item.id} style={estilos.item}>
             <Image source={{ uri: posterPath + item.poster_path }} style={estilos.imagem} />
             <Text style={estilos.nome}>{item.title}</Text>
@@ -13,8 +13,6 @@ export default function Item({ item }) {
 }
 
 let posterPath = "https://image.tmdb.org/t/p/w92";
-
-const handlerClick = () => <Detalhes />;
 
 const estilos = StyleSheet.create({
     item: {

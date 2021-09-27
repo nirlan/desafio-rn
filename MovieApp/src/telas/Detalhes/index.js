@@ -1,11 +1,13 @@
 ﻿import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 
-export default function Detalhes({ title, poster_path }) {
+import imagem from '../../../assets/rolo-de-filme.png';
+
+export default function Detalhes() {
     return <View>
-        <Text>{title}</Text>;
-        <Image source={{ uri: posterPath + poster_path }} />
+        {/* <Text>{route}</Text>; */}
+        <Image source={imagem} />
     </View>
 }
 
-let posterPath = "https://image.tmdb.org/t/p/w500";
+// let posterPath = "https://image.tmdb.org/t/p/w500";
