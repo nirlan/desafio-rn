@@ -1,18 +1,20 @@
 ﻿import React from 'react';
 import { View, Image, StyleSheet, Text, TouchableOpacity } from 'react-native';
 
+import Detalhes from '../../Detalhes'
+
 export default function Item({ item }) {
-    return <>
+    return <TouchableOpacity onPress={handlerClick}>
         <View key={item.id} style={estilos.item}>
-            <TouchableOpacity>
-                <Image source={{ uri: posterPath + item.poster_path }} style={estilos.imagem} />
-                <Text style={estilos.nome}>{item.title}</Text>
-            </TouchableOpacity>
+            <Image source={{ uri: posterPath + item.poster_path }} style={estilos.imagem} />
+            <Text style={estilos.nome}>{item.title}</Text>
         </View>
-    </>
+    </TouchableOpacity>
 }
 
 let posterPath = "https://image.tmdb.org/t/p/w92";
+
+const handlerClick = () => <Detalhes />;
 
 const estilos = StyleSheet.create({
     item: {
